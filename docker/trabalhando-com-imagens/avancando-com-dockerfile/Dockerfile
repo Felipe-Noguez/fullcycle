@@ -20,3 +20,6 @@ COPY html /usr/share/nginx
 # COPY: É a instrução do Dockerfile para copiar arquivos ou diretórios.
 # html: É o caminho relativo no contexto de build que contém os arquivos ou diretórios a serem copiados.
 # /usr/share/nginx: É o destino dentro da imagem onde os arquivos ou diretórios serão copiados.
+
+# Acessando o container:
+# docker run -it <nome_ou_id_do_container> bash
