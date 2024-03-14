@@ -1,4 +1,4 @@
-# Aula - Configurando app node com docker-compose
+# Aula - Node vs MySQL
 
 - Nesta aula, utilizamos o [docker-compose.yaml](docker-compose.yaml)  para subir o container.
 
