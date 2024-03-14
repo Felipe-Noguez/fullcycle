@@ -12,6 +12,11 @@
 npm-debug.log
 yarn-error.log
 
+#MySQL
+**/mysql
+docker/05-docker-compose/5.2-criando-banco-de-dados-mysql/mysql/
+
+
 # IDEs and editors
 .idea/
 .project
