@@ -2,4 +2,4 @@
 
 
 Link para o repositório do Dockerhub:
-- [https://hub.docker.com/r/felipenoguez/fullcycle/tags](https://hub.docker.com/r/felipenoguez/fullcycle/tags){target="_blank"}
+> [https://hub.docker.com/r/felipenoguez/fullcycle/tags](https://hub.docker.com/r/felipenoguez/fullcycle/tags)
