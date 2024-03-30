@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
             return res.status(500).send('Erro ao executar a query.');
         }
         console.log(results);
-        res.send('<h1>Full Cycle Rocks!</h1>' + JSON.stringify(results));
+        res.send('<h1>Full Cycle Rocks!</h1><ul>' + results.map(result => `<li>${result.name}</li>`).join('') + '</ul>');
     });
 });
 
