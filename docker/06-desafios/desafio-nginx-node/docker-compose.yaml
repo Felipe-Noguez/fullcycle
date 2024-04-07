@@ -13,20 +13,32 @@ services:
       - MYSQL_ROOT_PASSWORD=root
     networks:
       - node-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-p", "-proot"]
+      interval: 15s
+      timeout: 10s
+      retries: 10
 
   app:
     build:
       context: ./node
       dockerfile: Dockerfile
     container_name: app
+    # Comentários não funcionaram, mas deixo para estudo posterior
+    # entrypoint: dockerize -wait tcp://db:3306 -timeout 60s docker-entrypoint.sh
+    # entrypoint: sh -c "node index.js"
     image: felipenoguez/app-node:v1
     depends_on:
-      - db
+      db:
+        condition: service_healthy
     networks:
       - node-network
     tty: true
 
   nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
     image: nginx:1.17.10
     container_name: nginx
     ports:
