@@ -83,7 +83,43 @@ use-agent
 gpgconf --launch gpg-agent
 ```
 
-```bash
-```
-Chave salva:
+- Chave salva:
 ![alt text](image-4.png)
+
+#### Adicionando outro e-mail na chave gpg
+
+```bash
+gpg --list-secret-keys --keyid-form LONG
+```
+
+- Comando para editar a gpg key:
+```bash
+gpg --edit-key 876E472612292E0E
+```
+
+- Após utilizar o comando acima, será aberto o terminal 'gpg' para adicionar outro usuário, onde será usado o comando abaixo (conforme imagens abaixo):
+```bash
+adduid
+```
+![alt text](image-5.png)
+
+- Agora vamos selecionar o segundo usuário, utiliznado:
+```bash
+uid 2
+```
+![alt text](image-6.png)
+
+- Logo em seguida, é solicitado o nível de confiança, onde foi escolhido 'ultimate':
+```bash
+trust
+```
+
+![alt text](image-7.png)
+
+- Após a edição com os passos, vamos salvar:
+
+```bash
+save
+```
+
+![alt text](image-8.png)
