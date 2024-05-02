@@ -85,3 +85,5 @@ gpgconf --launch gpg-agent
 
 ```bash
 ```
+Chave salva:
+![alt text](image-4.png)
