@@ -1,5 +1,9 @@
 # Padrões e técnicas avançadas com Git e Github
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
 ## Instalação do Gitflow:
 
 Links de referência:
