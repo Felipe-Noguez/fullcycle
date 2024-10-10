@@ -44,6 +44,11 @@ git push origin feature/pr
 
 ![alt text](image-4.png)
 
+- - Comando para remover a branch remota.
+```bash
+git push origin -d feature/pr
+```
+
 6. Agora, vamos realizar o merge, enviando a `feature/pr`para a `develop` e/ou atualizar o repositório local:
 
 ```bash
